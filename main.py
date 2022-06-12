@@ -1,13 +1,12 @@
-from Corruption import CorruptionSolving
+from CorruptionGreedyAlgorithm import CorruptionGreedyAlgorithm
 from LongestSubsequence import LongestSubsequence
 
 PERCENT = 0.12
 ACCOUNTS = 10
 RANGE = 10000
 
-corruption_solving = CorruptionSolving(PERCENT, ACCOUNTS, RANGE)
-print(corruption_solving.count_profit_merging_sum())
-
+corruption_solve = CorruptionGreedyAlgorithm(PERCENT, ACCOUNTS, RANGE)
+print(corruption_solve.get_optimal_money_account())
 
 
 longest_subs = LongestSubsequence()
